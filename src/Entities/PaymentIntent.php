@@ -25,7 +25,7 @@ class PaymentIntent extends \Paymongo\Entities\BaseEntity
             $this->payments = [];
 
             foreach($attributes['payments'] as $payment) {
-                $this->payments[] = new \Paymongo\Entities\Payment($payment);
+                $this->payments[] = new \Paymongo\Entities\Payment((object) $payment);
             }
         }
 
