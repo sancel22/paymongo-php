@@ -18,7 +18,7 @@ class Payment extends BaseEntity
         $this->net_amount = $attributes['net_amount'];
         $this->statement_descriptor = $attributes['statement_descriptor'];
         $this->status = $attributes['status'];
-        $this->available_at = $attributes['available_at'];
+        // $this->available_at = $attributes['available_at'];
         $this->created_at = $attributes['created_at'];
         $this->paid_at = $attributes['paid_at'];
         $this->payout = $attributes['payout'];
